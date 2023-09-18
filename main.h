@@ -65,7 +65,6 @@ int _printf(const char *format, ...);
 int print_char(va_list ap, parameters *params);
 int print_int(va_list ap, parameters *params);
 int print_string(va_list ap, parameters *params);
-int print_string(va_list ap, parameters *params);
 int print_S(va_list ap, parameters *params);
 char *convert(long int num, int base, int flags, parameters *params);
 int print_unsigned(va_list ap, parameters *params);
