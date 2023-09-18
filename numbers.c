@@ -50,7 +50,7 @@ char *convert(long int num, int base, int flags, parameters *params)
 
 int print_unsigned(va_list ap, parameters *params)
 {
-	unsigned int x;
+	unsigned long x;
 
 	if (params->l)
 		x = (unsigned long)va_arg(ap, unsigned long);
@@ -59,7 +59,7 @@ int print_unsigned(va_list ap, parameters *params)
 	else
 		x = (unsigned int)va_arg(ap, unsigned int);
 	params->unsign = 1;
-	return (print_number(convert(l, 10, CONVERT_UNSIGNED, params), params));
+	return (print_number(convert(x, 10, CONVERT_UNSIGNED, params), params));
 }
 
 /**

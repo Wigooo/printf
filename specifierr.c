@@ -109,10 +109,10 @@ int get_modifier(char *s, parameters *params)
 	switch (*s)
 	{
 		case 'h':
-			i = params->h = 1;
+			x = params->h = 1;
 			break;
 		case 'l':
-			i = params->l = 1;
+			x = params->l = 1;
 			break;
 	}
 	return (x);
