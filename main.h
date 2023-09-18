@@ -32,7 +32,7 @@
  * @l: 1 if there is a l modifier
 */
 
-struct parameters
+typedef struct parameters
 {
 	unsigned int unsign	: 1;
 	unsigned int plus	: 1;
@@ -44,7 +44,7 @@ struct parameters
 	unsigned int precision;
 	unsigned int h		: 1;
 	unsigned int l		: 1;
-};
+} parameters;
 
 /**
  * struct specifier - specifier struct
