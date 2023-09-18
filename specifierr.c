@@ -8,7 +8,7 @@
  * Return: int
 */
 
-int (*get_specifier(char *s))(va_list ap, parameters *params)
+int (*get_specifier(char *s))(va_list ap, parameters * params)
 {
 	specifier_t specifiers[] = {
 		{"c", print_char},
