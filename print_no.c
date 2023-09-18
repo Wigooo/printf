@@ -47,7 +47,7 @@ int print_number(char *str, parameters *params)
 		i--;
 	}
 
-	if (params->precision != UNIT_MAX)
+	if (params->precision != UINT_MAX)
 		while (i++ < params->precision)
 			*--str = '0';
 	if (neg)
