@@ -53,11 +53,11 @@ struct parameters
  * @f: function
 */
 
-struct specifier
+typedef struct specifier
 {
 	char *specifier;
 	int (*f)(va_list, parameters *);
-};
+} specifier_t;
 
 int _puts(char *str);
 int _putchar(int c);
