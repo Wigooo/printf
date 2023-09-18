@@ -32,7 +32,7 @@
  * @l: 1 if there is a l modifier
 */
 
-struct parameters
+typedef struct parameters
 {
 	unsigned int unsign	: 1;
 	unsigned int plus	: 1;
@@ -44,7 +44,7 @@ struct parameters
 	unsigned int precision;
 	unsigned int h		: 1;
 	unsigned int l		: 1;
-};
+} parameters;
 
 /**
  * struct specifier - specifier struct
@@ -64,7 +64,6 @@ int _putchar(int c);
 int _printf(const char *format, ...);
 int print_char(va_list ap, parameters *params);
 int print_int(va_list ap, parameters *params);
-int print_string(va_list ap, parameters *params);
 int print_string(va_list ap, parameters *params);
 int print_S(va_list ap, parameters *params);
 char *convert(long int num, int base, int flags, parameters *params);
