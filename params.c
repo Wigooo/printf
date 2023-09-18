@@ -22,6 +22,5 @@ void init_params(parameters *params, va_list ap)
 
 	params->h = 0;
 	params->l = 0;
-	void(ap);
+	(void)ap;
 }
-
