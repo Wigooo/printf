@@ -65,7 +65,7 @@ int print_string(va_list ap, parameters *params)
 
 	if (params->minus)
 	{
-		if (params->precision != UNIT_MAX)
+		if (params->precision != UINT_MAX)
 			for (i = 0; i < pad; i++)
 				sum += _putchar(*str++);
 		else
@@ -76,7 +76,7 @@ int print_string(va_list ap, parameters *params)
 		sum += _putchar(pad_char);
 	if (!params->minus)
 	{
-		if (params->precision != UNIT_MAX)
+		if (params->precision != UINT_MAX)
 			for (i = 0; i < pad; i++)
 				sum += _putchar(*str++);
 		else
