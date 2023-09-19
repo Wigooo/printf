@@ -73,7 +73,7 @@ int (*get_specifier(char *s))(va_list ap, parameters *params);
 int get_print_func(char *s, va_list ap, parameters *params);
 int get_flag(char *s, parameters *params);
 int get_modifier(char *s, parameters *params);
-int *get_width(char *s, parameters *params, va_list ap);
+char *get_width(char *s, parameters *params, va_list ap);
 int print_hex(va_list ap, parameters *params);
 int print_HEX(va_list ap, parameters *params);
 int print_binary(va_list ap, parameters *params);
