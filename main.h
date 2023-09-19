@@ -78,6 +78,7 @@ int print_hex(va_list ap, parameters *params);
 int print_HEX(va_list ap, parameters *params);
 int print_binary(va_list ap, parameters *params);
 int print_octal(va_list ap, parameters *params);
+int print_percent(va_list ap, parameters *params);
 int print_from_to(char *start, char *stop, char *except);
 int print_rev(va_list ap, parameters *params);
 int print_rot13(va_list ap, parameters *params);
